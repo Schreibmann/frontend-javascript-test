@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>SorTable</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SorTable</title>
 </head>
 
 <body>
-  <div class="toolbar">
-    <div class="search">
-        <input id="search" type="search" placeholder="Поисковый запрос" style="width:330px;"/>
-        <button id="searchBtn" style="margin-left:1px;">Поиск</button>
-        <a class="divider">|</a>
-        <button id="smallDataBtn" style="margin-left:1px;">Мало данных</button>
-        <button id="bigDataBtn" style="margin-left:1px;">Много данных</button>
-        <a class="divider">|</a>
-        <select id="pages" name="pages">
-            <option value="20" selected="true">20</option>
-            <option value="30">30</option>
-            <option value="40">40</option>
-            <option value="50">50</option>
-        </select>  
-        <a>Записей на странице</a>
+    <div class="toolbar">
+        <div class="search">
+            <input id="search" type="search" placeholder="Поисковый запрос" style="width:330px;" />
+            <button id="searchBtn" style="margin-left:1px;">Поиск</button>
+            <a class="divider">|</a>
+            <button id="smallDataBtn" style="margin-left:1px;">Мало данных</button>
+            <button id="bigDataBtn" style="margin-left:1px;">Много данных</button>
+            <a class="divider">|</a>
+            <select id="pages" name="pages">
+                <option value="20" selected="true">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+            <a>Записей на странице</a>
+        </div>
     </div>
-  </div>
-
-  <div class="wrapper">
-    <table class="sortable">
-        <thead>
-            <tr class="thead" style="">
-                <th name="id">Id<span class="arrow">⇵</span></th> 
-                <th name="firstName">First name <span class="arrow">⇵</span></th> 
-                <th name="lastName">Last Name<span class="arrow">⇵</span></th>
-                <th name="email">e-mail<span class="arrow">⇵</span></th>
-                <th name="phone">Phone<span class="arrow">⇵</span></th>
-            </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-        <tfoot>
-            <tr>
-                <th id="navigation" class="navigation" align="center" colspan="5">Данные не загружены!</th>
-            </tr>
-        </tfoot>
-    </table>
-  </div>  
-<div id="user-info" class="user-info"></div>
+    <div class="wrapper">
+        <table class="sortable">
+            <thead>
+                <tr class="thead" style="">
+                    <th name="id">Id<span class="arrow">⇵</span></th>
+                    <th name="firstName">First name <span class="arrow">⇵</span></th>
+                    <th name="lastName">Last Name<span class="arrow">⇵</span></th>
+                    <th name="email">e-mail<span class="arrow">⇵</span></th>
+                    <th name="phone">Phone<span class="arrow">⇵</span></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <tfoot>
+                <tr>
+                    <th id="navigation" class="navigation" align="center" colspan="5">Данные не загружены!</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div id="user-info" class="user-info"></div>
 </body>
+
 </html>
